@@ -79,7 +79,7 @@ class _ScreenCreatePasswordState extends State<ScreenCreatePassword> {
                     ),
                   ).withOnlyPadding(top: 2.5.h, bottom: 1.h),
                   NotesTextField(
-                    onTap: () {
+                    onIconTap: () {
                       setState(() {
                         isPasswordHidden = !isPasswordHidden;
 
@@ -105,7 +105,7 @@ class _ScreenCreatePasswordState extends State<ScreenCreatePassword> {
                     ),
                   ).withOnlyPadding(top: 2.5.h, bottom: 1.h),
                   NotesTextField(
-                    onTap: () {
+                    onIconTap: () {
                       setState(() {
                         isPasswordHidden = !isPasswordHidden;
 

@@ -105,7 +105,7 @@ class _ScreenRegisterState extends State<ScreenRegister> {
                 ),
               ).withOnlyPadding(top: 2.5.h, bottom: 1.h),
               NotesTextField(
-                onTap: () {
+                onIconTap: () {
                   setState(() {
                     isPasswordHidden = !isPasswordHidden;
 
@@ -131,7 +131,7 @@ class _ScreenRegisterState extends State<ScreenRegister> {
                 ),
               ).withOnlyPadding(top: 2.5.h, bottom: 1.h),
               NotesTextField(
-                onTap: () {
+                onIconTap: () {
                   setState(() {
                     isPasswordHidden = !isPasswordHidden;
 

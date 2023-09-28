@@ -70,7 +70,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
                     ),
                   ).withOnlyPadding(top: 2.5.h, bottom: 1.h),
                   NotesTextField(
-                    onTap: () {
+                    onIconTap: () {
                       setState(() {
                         isPasswordHidden = !isPasswordHidden;
 

@@ -18,8 +18,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     LayoutHome(),
     LayoutProfile(),
   ];
-  final PageStorageBucket bucket = PageStorageBucket();
-  // Widget? currentScreen;
+
 
   @override
   Widget build(BuildContext context) {
