@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:notes_mp/extensions/padding_extension.dart';
+import 'package:notes_mp/extensions/parsin_extension.dart';
 import 'package:notes_mp/helpers/constants.dart';
 import 'package:notes_mp/views/screens/screen_login.dart';
 import 'package:notes_mp/widgets/notes_button.dart';
 import 'package:sizer/sizer.dart';
 
 class ScreenOnBoarding extends StatelessWidget {
-  const ScreenOnBoarding({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +37,9 @@ class ScreenOnBoarding extends StatelessWidget {
               text: "Let’s Get Started",
               isIcon: true,
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ScreenLogin()));
+                Get.off(ScreenLogin());
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (context) => ScreenLogin()));
               },
             ),
           ],

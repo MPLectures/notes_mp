@@ -57,6 +57,14 @@ class NotesTextField extends StatelessWidget {
                   ),
             borderRadius: BorderRadius.circular(8),
           ),
+          border: OutlineInputBorder(
+            borderSide: isFilled == true
+                ? BorderSide.none
+                : BorderSide(
+              color: NotesColor.greyColor2,
+            ),
+            borderRadius: BorderRadius.circular(8),
+          ),
           focusedBorder: OutlineInputBorder(
             borderSide: isFilled == true
                 ? BorderSide.none

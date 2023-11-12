@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:notes_mp/extensions/padding_extension.dart';
 import 'package:notes_mp/helpers/constants.dart';
 import 'package:notes_mp/views/layouts/list_item.dart';
@@ -84,6 +85,56 @@ class _LayoutHomeState extends State<LayoutHome> {
                     },
                     child: Text('Add Note'),
                   ).withAllPadding(20.sp),
+                  ElevatedButton(
+                      onPressed: () {
+                        Get.snackbar(
+                          "Alert", "You press button",
+                          titleText: Text("Alert 2"),
+                          messageText: Text("You pressed button"),
+                          snackPosition: SnackPosition.BOTTOM,
+                          // colorText: Colors.red
+                          backgroundColor: Colors.purple,
+                          borderRadius: 10,
+                          // maxWidth: 200
+                          icon: Icon(
+                            Icons.info_outlined,
+                            color: Colors.red,
+                          ),
+                          mainButton: TextButton(
+                              onPressed: () {}, child: Text("Hello")),
+                        );
+                      },
+                      child: Text("Show Snackbar")),
+                  ElevatedButton(
+                      onPressed: () {
+                        Get.defaultDialog(
+                          title: "Hello",
+                          // middleText: "ytvbnjytcvbjkvtrcyvgh\njvyvyuvytvtfytv",
+                          content: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.message),
+                              Text("ytvbnjytcvbjkvtrcyvgh\njvyvyuvytvtfytv"),
+                            ],
+                          ),
+                          // textCancel: "No",
+                          // textConfirm: "Yes",
+                          //onConfirm: () {
+                          //Get.back();
+                          //},
+                          //onCancel: (){},
+
+                          // confirm: Text("YUP"),
+                          // cancel: Text("NOPE"),
+
+
+                          actions: [
+                            ElevatedButton(onPressed: (){}, child: Text("No")),
+                            ElevatedButton(onPressed: (){}, child: Text("Yes")),
+                          ]
+                        );
+                      },
+                      child: Text("Show Dialog")),
                 ],
               ).withSymmetricPadding(horizon: 15.w),
             ),
