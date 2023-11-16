@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_mp/views/screens/screen_get_builder.dart';
 import 'package:notes_mp/views/screens/screen_getx.dart';
 import 'package:notes_mp/views/screens/screen_on_boarding.dart';
 import 'package:sizer/sizer.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, deviceType) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        home: ScreenOnBoarding(),
+        home: ScreenGetBuilder(),
       ),
     );
   }
